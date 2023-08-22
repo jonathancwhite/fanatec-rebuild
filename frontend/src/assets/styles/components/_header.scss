@@ -1,0 +1,124 @@
+.header {
+  background: #292930;
+
+  &__topbar,
+  &__nav {
+    color: #fff;
+    border-bottom: 1px solid #3f3f47;
+  }
+
+  &__topbar {
+    font-family: "Open Sans";
+    color: #bfbfc1;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    &--logo {
+      flex: 15%;
+      img {
+        max-width: 80%;
+      }
+    }
+    &--navigation {
+      flex: 70%;
+      justify-content: center;
+      padding: 0 2.5rem;
+    }
+    &--search {
+      flex: 15%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      input {
+        background: transparent;
+        font-size: 14px;
+        border: none;
+        font-family: "Open Sans";
+        width: 80%;
+        padding: 15px;
+        caret-color: #fff;
+        &::placeholder {
+          color: #bfbfc1;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+.topbar {
+  &__nav {
+    font-family: "Open Sans";
+    font-weight: 100;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    &List {
+      flex: 80%;
+      display: flex;
+      list-style: none;
+      text-decoration: none;
+      line-height: 2.375rem;
+      padding-left: 1.5rem;
+      &--item {
+        margin-right: 1em;
+        line-height: 38px;
+        a {
+          text-decoration: none;
+          color: #bfbfc1;
+          font-size: 13px;
+        }
+      }
+    }
+    &Entry {
+      flex: 20%;
+      display: flex;
+      list-style: none;
+      text-decoration: none;
+      justify-content: flex-end;
+      line-height: 2.375rem;
+      align-items: center;
+      &--item {
+        margin-right: 1em;
+        line-height: 38px;
+        a {
+          text-decoration: none;
+          color: #bfbfc1;
+          font-size: 13px;
+          display: flex;
+          align-items: center;
+          svg {
+            margin-right: 0.5em;
+            // font-weight: 800;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main {
+  &__nav {
+    &List {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      &--item {
+        font-family: "Khand";
+        font-size: 17px;
+        text-transform: uppercase;
+        font-weight: 500;
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

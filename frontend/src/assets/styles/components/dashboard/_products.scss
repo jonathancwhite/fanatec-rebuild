@@ -1,0 +1,11 @@
+.productsDashboard {
+	padding: 1rem;
+	font-family: "Open Sans";
+	// font-weight: 200;
+	&__control {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 2rem;
+	}
+}
